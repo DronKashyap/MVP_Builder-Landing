@@ -8,11 +8,11 @@ export default function Footer() {
         {/* Logo and Description */}
         <div>
           <div className="flex items-center space-x-2">
-            <div className="bg-blue-100 p-2 rounded-lg">
+            <div className="bg-blue-100  rounded-lg">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/8146/8146125.png"
+                src="./Logo.png"
                 alt="rocket"
-                className="w-5 h-5"
+                className="w-[42px] h-[46px]"
               />
             </div>
             <h2 className="text-lg font-semibold">
@@ -84,11 +84,14 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Large Background Text */}
-      <h1 className="absolute text-8xl md:text-[10rem] font-bold text-blue-300 bottom-0 left-1/2 -translate-x-1/2 select-none pointer-events-none">
-        LaunchPad Labs
-      </h1>
+      <div className="relative flex justify-center">
+            <h1 className="text-8xl md:text-[10rem] font-bold text-blue-300">
+                LaunchPad Labs
+            </h1>
 
+            {/* White fade overlay */}
+            <div className="absolute bottom-0 w-full h-48 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+            </div>
       {/* Footer Bottom */}
       <div className="max-w-7xl mx-auto text-center mt-16 text-sm text-gray-400">
         © 2025 LinkVerse. All rights reserved.
